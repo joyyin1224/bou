@@ -1,0 +1,161 @@
+body{
+	background-color: #f2f2f2;
+	font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+}
+a{
+	color: black;
+}
+a:hover{
+	color: #20809f;
+}
+#logo{
+	font-size: 150px;
+	color: #ffaf2b;
+	text-align: center;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	font-family: 'Brush Script MT', cursive;
+	text-decoration: none;
+}
+#cart{
+	width: 35px;
+	height:25px;
+	float: right;
+	position: relative;
+	top: -150px;
+}
+#login{
+	font-size: 15px;
+	float: left;
+	position: relative;
+	top: -150px;
+	line-height: 20px;
+	display: inline-block;
+}
+#navigation{
+	width: 100%;
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+li{
+	float: left;
+	border-right: 1px solid #bbb;
+}
+li:last-child{
+	border-right: none;
+}
+li a, .dropbtn{
+	display: inline-block;
+	color: #333;
+	text-align: center;
+	padding: 10px 16px;
+	text-decoration: none;
+	width: 150px;
+	font-size: 20px;
+}
+li a:hover, .dropdown:hover .dropbtn{
+	color: #FFAF2B;
+};
+li.dropdown{
+	display: inline-block;
+}
+.dropdowncontent{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 150px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdowncontent a{
+	color: #333;
+	padding: 5px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	font-size: 15px;
+}
+.dropdowncontent a:hover{
+	color: #AD6C01;
+	background-color: #f1f1f1;
+}
+.dropdown:hover .dropdowncontent{
+	display: block;
+}
+#filter{
+	width: 20%;
+	height: 500px;
+	margin: 10px;
+	background-color: #d9d9d9;
+	float: left;
+}
+#container{
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 70%;
+	height: auto;
+	margin: 10px;
+	margin-left: 25%;
+	z-index: -3;
+}
+.product{
+	width: 200px;
+	height: 300px;
+	margin: 1em;
+	margin-left: 4em;
+	position: relative;
+	z-index: -2;
+}
+.product img{
+	width:175px;
+	height: 225px;
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	z-index: -1;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+img.top:hover{
+	opacity: 0;
+}
+.productname{
+	text-decoration: none;
+}
+.productdetail{
+	font-size: 15px;
+	position: relative;
+	top: 240px;
+	left: 10px;
+	z-index: -1;
+}
+div.center{
+	text-align: center;
+}
+ul.pagination{
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+ul.pagination li{
+	display: inline;
+	border-right: none;
+}
+ul.pagination li a{
+	color: #333;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+	font-size: 12.5px;
+	width: auto;
+}
+ul.pagination li a:hover{
+	color: #FFAF2B;
