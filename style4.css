@@ -110,7 +110,7 @@ li.dropdown{
 }
 .box1, .box3, .box5{
 	width: 50%;
-	height: 400px;
+	height: auto;
 	margin: 20px;
 }
 .boutiquename{
