@@ -25,6 +25,23 @@ a:hover{
 	position: relative;
 	top: -150px;
 }
+input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 10px;
+    background-color: white;
+    padding: 2.5px 10px;
+    float: right;
+    position: relative;
+    top: -150px;
+    left: -50px;
+}
+input[type=text]:focus{
+	outline: none;
+	border: 2px solid #ffaf2b;
+}
 #login{
 	font-size: 15px;
 	float: left;
@@ -57,7 +74,7 @@ li a, .dropbtn{
 	display: inline-block;
 	color: #333;
 	text-align: center;
-	padding: 10px 16px;
+	padding: 5px 5px;
 	text-decoration: none;
 	width: 150px;
 	font-size: 20px;
@@ -77,7 +94,7 @@ li.dropdown{
 }
 .dropdowncontent a{
 	color: #333;
-	padding: 5px 16px;
+	padding: 5px 10px;
 	text-decoration: none;
 	display: block;
 	text-align: left;
@@ -111,7 +128,7 @@ li.dropdown{
 	clear:none;
 	margin-right: 50px;
 }
-@media(min-width: 640px){
+@media(min-width: 750px){
 	.productbig{
 		min-width: 40%;
 		flex-basis: 40%;
@@ -135,6 +152,7 @@ li.dropdown{
 	position: relative;
 	left: 20px;
 	top: 50px;
+	line-height: 30px;
 }
 #addtocart{
 	background-color: #FFAF2B;
@@ -173,4 +191,7 @@ li.dropdown{
 .user{
 	font-size: 10px;
 	font-style: italic;
+}
+.selector{
+	display: inline-block;
 }
