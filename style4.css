@@ -102,16 +102,18 @@ li.dropdown{
 	box-sizing: border-box;
 	margin: 10px;
 }
+.box1, .box3, .box5{
+	width: 50%;
+	margin: 20px;
+}
 @media(min-width: 640px){
-	.box {
+	.box1, .box3, .box5{
+		float: left;
+	}
+	.box1, .box2, .box3, .box4, .box5, .box6 {
 		min-width: calc(50% - 30px);
 		flex-basis: calc(50% - 30px);
 	}
-}
-.box1, .box3, .box5{
-	width: 50%;
-	height: auto;
-	margin: 20px;
 }
 .boutiquename{
 	font-size: 25px;
