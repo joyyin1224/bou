@@ -13,15 +13,18 @@
 	<a id="logo" href="bou-main-page.html">BOU!</a>
 	</div>
 	<a href=""><img id="cart" src="img/shopping-cart-black-3.png"></a>
+	<form>
+		<input type="text" name="search" placeholder="Search..">
+	</form>
 	<div id="login"> <a href="">Sign In</a>
 		<br/>
 		<a href="">Register</a>
 		<br/>
 		<a href="">About Us</a>
 	</div>
-	<nav id=navigation>
-	<ul>
-		<li><a href="">New In</a></li>
+	<nav id="navigation">
+<ul>
+		<li><a href="" class="dropbtn">New In</a></li>
 		<li><a href="bou-boutique-page.html">Boutiques</a></li>
 		<li class="dropdown">
 			<a href="" class="dropbtn">Clothing</a>
@@ -87,9 +90,25 @@
 			$865
 		</div>
 		<div id="filter">
-			color filter
+			<span>color: </span>
+			<form class="selector">
+			  <select id="color" name="color">
+			  <option value="white">white</option>
+			  <option value="gray">gray</option>
+			  <option value="yellow">yellow</option>
+			  </select>
+			</form>
 			<br/>
-			size filter
+			<span>size: </span>
+			<form class="selector">
+			  <select id="size" name="size">
+			  <option value="XS">XS</option>
+			  <option value="S">S</option>
+			  <option value="M">M</option>
+			  <option value="L">L</option>
+			  <option value="XL">XL</option>
+			  </select>
+			</form>
 		</div>
 		<button id="addtocart">Add to Cart</button>
 	</div>
