@@ -35,6 +35,10 @@ a:hover{
 }
 #navigation{
 	width: 100%;
+	z-index: 2;
+}
+#navigation * {
+	z-index: 2;
 }
 ul{
 	list-style-type: none;
@@ -98,24 +102,28 @@ li.dropdown{
 .box{
 	min-width: 100%;
 	height: auto;
-	flex: 1;
+	flex: 1 0 100%;
 	box-sizing: border-box;
 	margin: 10px;
 }
 .productbig{
-	height: 600px;
+	width:30%;
+	clear:none;
+	margin-right: 50px;
 }
 @media(min-width: 640px){
 	.productbig{
-		min-width: 30%;
+		min-width: 40%;
+		flex-basis: 40%;
+		float: left;
 	}
 	.briefcontainer{
 		min-width: 60%;
+		flex-basis: 60%;
 	}
 }
 .briefcontainer{
 	height: 400px;
-	z-index: -1;
 }
 #brief{
 	font-size: 25px;

@@ -35,7 +35,13 @@ a:hover{
 }
 #navigation{
 	width: 100%;
+	z-index: 2;
 }
+
+#navigation * {
+	z-index:2;
+}
+
 ul{
 	list-style-type: none;
 	margin: 0;
@@ -110,7 +116,6 @@ li.dropdown{
 	margin: 1em;
 	margin-left: 4em;
 	position: relative;
-	z-index: -2;
 }
 .product img{
 	width:175px;
@@ -118,7 +123,6 @@ li.dropdown{
 	position: absolute;
 	top: 5px;
 	left: 10px;
-	z-index: -1;
 	-webkit-transition: opacity 1s ease-in-out;
 	-moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
@@ -135,7 +139,6 @@ img.top:hover{
 	position: relative;
 	top: 240px;
 	left: 10px;
-	z-index: -1;
 }
 div.center{
 	text-align: center;
@@ -159,3 +162,10 @@ ul.pagination li a{
 }
 ul.pagination li a:hover{
 	color: #FFAF2B;
+}
+.productdetail a{
+	text-decoration: none;
+}
+.productdetail a:hover{
+	color: #ad6c01;
+}
